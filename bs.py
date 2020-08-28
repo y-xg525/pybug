@@ -26,3 +26,14 @@
 #       soup.select('.tang > ul > li > a')[0]
 #       soup.select('.tang > ul a') #空格代表多个层级
 #       soup.a.text/string/get_text #string只能获取标签直系文本，其他两个可以获取标签内所有
+
+# from lxml import etree
+# tree = etree.parse('test.html')
+#     r= tree.xpath('/html/body/div')
+#     r= tree.xpath('/html//div')
+#     r= tree.xpath('//div')
+#     r = tree.xpath('//div[@class="song"]')
+#     r = tree.xpath('//div[@class="song"]/p[3]') 索引定位从1开始
+#     r = tree.xpath('//div[@class="tang"]//li[5]/a/text()')[0]  //text()获取非直系
+#     r = tree.xpath('//div[@class="song"]/img/@src') 获取属性值
+# tree = etree.HTML(page_text)
